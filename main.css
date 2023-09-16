@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 6px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 6px;
+  border: none;
+}
+
+nav li {
+  display: inline;
+  margin-left: 8px;
+  font-size: 15px;
+  
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover {
+  color: #f9f9f9;
+}
+
+nav {
+  background-color: #5fc462;
+  padding: 8px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 18px;
+  padding: 0 20%;
+}
+
+.about h2, .prod-title h2 {
+  border-bottom: solid #5fc462;
+  color:#5fc462;
+  font-style: italic;
+}
+
+.about-image, .about-text {
+  margin: 10px;
+  text-align: justify;
+}
+
+.prod-title {
+  margin: 18px 0;
+  padding: 0 20%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0 20%
+}
+
+.product {
+  margin: 10px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 250px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 3px solid #4CAF50;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 819px) { /*celular*/
+  .products .product {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 821px) { /*tablet*/
+  .products {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 821px) { /*desktop*/
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+
