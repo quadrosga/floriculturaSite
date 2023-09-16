@@ -124,7 +124,20 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 820px) and (max-width: 821px) { /*tablet*/
+@media screen and (max-width: 819px) { 
+  .products {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1023px) { 
   .products {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -137,7 +150,7 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 821px) { /*desktop*/
+@media screen and (min-width: 1024px) { 
   .products {
     display: grid;
     grid-template-columns: repeat(4, 25%);
